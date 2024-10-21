@@ -1,3 +1,0 @@
-cd C:\Automation\Selenium\seleniumwebdriver\OpenCartv121
-mvn test
-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
