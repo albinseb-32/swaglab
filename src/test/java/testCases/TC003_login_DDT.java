@@ -31,11 +31,7 @@ public class TC003_login_DDT extends BaseClass{
 			map.click_logout();
 			Assert.assertTrue(true);
 			
-		}
-		
-		
-		
-		
+		}	
 		
 	}
 

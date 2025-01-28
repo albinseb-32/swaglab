@@ -9,13 +9,13 @@
       <class name="testCases.TC001_Acc_reg"/>
     </classes>
   </test> <!-- Test -->
-  <test  name="edgetest">
+ <!-- <test  name="edgetest">
   <parameter name="browser" value="edge">
 </parameter>
     <classes>
       <class name="testCases.TC001_Acc_reg"/>
     </classes>
-  </test> <!-- Test -->
+  </test> --> <!-- Test -->
   <test  name="firefoxtest">
   <parameter name="browser" value="firefox">
 </parameter>

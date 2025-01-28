@@ -36,14 +36,23 @@ public class BaseClass{
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);	
-		//driver = new ChromeDriver();
 	
 		//String url = "http://192.168.157.106:4444/wd/hub";
-		if(p.getProperty("execution_env").equalsIgnoreCase("remote")) {
-			DesiredCapabilities capability  = new DesiredCapabilities();
-			capability.setPlatform(Platform.LINUX);
-			capability.setBrowserName(browser);
-			driver = new RemoteWebDriver(new URL("http://192.168.157.106:4444/wd/hub"), capability);
+		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
+		{
+			DesiredCapabilities capabilities=new DesiredCapabilities();
+		
+				capabilities.setPlatform(Platform.WIN11);
+			
+			//browser
+			switch(browser.toLowerCase())
+			{
+			case "chrome": capabilities.setBrowserName("chrome"); break;
+			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
+			default: System.out.println("No matching browser"); return;
+			}
+			
+			driver=new RemoteWebDriver(new URL("http://192.168.90.106:4444/wd/hub"),capabilities);
 		}
 		if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
 			
@@ -52,7 +61,7 @@ public class BaseClass{
 		case "chrome": driver = new ChromeDriver(); break;
 		case "edge" : driver = new EdgeDriver(); break;
 		case "firefox": driver = new FirefoxDriver(); break;
-		default : System.out.println("oomfi mone...");
+		default : System.out.println("Issue in launching the browser");
 		}
 			
 		}

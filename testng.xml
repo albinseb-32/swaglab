@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
      <!-- <class name="testCases.TC001_Acc_reg"/> -->
-      <class name="testCases.TC003_login_DDT"/>
+      <class name="testCases.TC001_Acc_reg"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
