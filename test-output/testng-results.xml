@@ -2,33 +2,33 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T00:37:29 IST" name="Suite" finished-at="2025-01-29T00:37:38 IST" duration-ms="9462">
+  <suite started-at="2025-01-31T09:47:51 IST" name="Suite" finished-at="2025-01-31T09:48:38 IST" duration-ms="46993">
     <groups>
       <group name="Master">
-        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@480d3575]" name="login" class="testCases.TC002_login_valid_creden"/>
+        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" name="login" class="testCases.TC002_login_valid_creden"/>
       </group> <!-- Master -->
       <group name="Regression">
-        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@480d3575]" name="login" class="testCases.TC002_login_valid_creden"/>
+        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" name="login" class="testCases.TC002_login_valid_creden"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-01-29T00:37:29 IST" name="ChromeTest" finished-at="2025-01-29T00:37:38 IST" duration-ms="9462">
+    <test started-at="2025-01-31T09:47:51 IST" name="ChromeTest" finished-at="2025-01-31T09:48:38 IST" duration-ms="46993">
       <class name="testCases.TC002_login_valid_creden">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_login_valid_creden@480d3575]" started-at="2025-01-29T00:37:29 IST" name="setup" finished-at="2025-01-29T00:37:35 IST" duration-ms="5806" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:47:52 IST" name="setup" finished-at="2025-01-31T09:48:34 IST" duration-ms="42705" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testCases.TC002_login_valid_creden@480d3575]" started-at="2025-01-29T00:37:35 IST" name="login" finished-at="2025-01-29T00:37:38 IST" duration-ms="2668" status="PASS">
+        <test-method signature="login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:48:34 IST" name="login" finished-at="2025-01-31T09:48:37 IST" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC002_login_valid_creden@480d3575]" started-at="2025-01-29T00:37:38 IST" name="tear_down" finished-at="2025-01-29T00:37:38 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:48:37 IST" name="tear_down" finished-at="2025-01-31T09:48:38 IST" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->

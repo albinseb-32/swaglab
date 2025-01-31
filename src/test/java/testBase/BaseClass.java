@@ -30,7 +30,7 @@ public class BaseClass{
 	
 		
 	@Parameters({"browser"})	
-	@BeforeClass(groups= {"Sanity", "Regression", "Master"})
+	@BeforeClass(groups= {"Sanity", "Regression", "Master", "Datadriven"})
 	
 	public void setup(String browser) throws IOException {
 		FileReader file = new FileReader("./src//test//resources//config.properties");
@@ -49,6 +49,7 @@ public class BaseClass{
 			{
 			case "chrome": capabilities.setBrowserName("chrome"); break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
+			case "firefox": capabilities.setBrowserName("firefox"); break;
 			default: System.out.println("No matching browser"); return;
 			}
 			
