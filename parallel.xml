@@ -18,9 +18,12 @@
   <parameter name="browser" value="chrome">
 </parameter>
     <classes>
-    <!--<class name="testCases.TC002_login_valid_creden"/> -->
-      <class name="testCases.TC002_login_valid_creden"/>
-    <!-- <class name="testCases.TC001_Acc_reg"/>  -->
+    <class name="testCases.TC001_login_valid_creden"/>
+       <class name="testCases.TC002_login_invalid"/> 
+   <class name="testCases.TC003_verify_sorting"/>
+   <class name="testCases.TC004_verify_cart_functionality"/> 
+   <class name="testCases.TC005_verify_complete_order"/> 
+   <class name="testCases.TC006_verify_empty_cart_checkout"/>
       
     </classes>
   </test>
@@ -28,9 +31,12 @@
   <parameter name="browser" value="firefox">
 </parameter>
     <classes>
-     <!-- <class name="testCases.TC003_login_DDT"/>
-      <class name="testCases.TC001_Acc_reg"/> -->
-      <class name="testCases.TC002_login_valid_creden"/>
+     <class name="testCases.TC001_login_valid_creden"/>
+       <class name="testCases.TC002_login_invalid"/> 
+   <class name="testCases.TC003_verify_sorting"/>
+   <class name="testCases.TC004_verify_cart_functionality"/> 
+   <class name="testCases.TC005_verify_complete_order"/> 
+   <class name="testCases.TC006_verify_empty_cart_checkout"/>
     </classes>
   </test>
    <!-- Test -->

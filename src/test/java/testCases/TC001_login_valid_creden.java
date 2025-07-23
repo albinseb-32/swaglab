@@ -6,24 +6,22 @@ import org.testng.asserts.SoftAssert;
 
 import pageObjects.HomePage;
 import pageObjects.loginPage;
-import pageObjects.myAccPage;
+import pageObjects.CartPage;
 import testBase.BaseClass;
 
-public class TC002_login_valid_creden extends BaseClass {
+public class TC001_login_valid_creden extends BaseClass {
 	
 	@Test(groups = {"Regression", "Master"})
 	void login() {
-		HomePage hp = new HomePage(driver);
-		hp.click_my_accBtn();
-		hp.click_login_text();
+		
 		loginPage lp = new loginPage(driver);
 		lp.setEmail(p.getProperty("email"));
 		lp.enterPwd(p.getProperty("pwd"));
 		lp.clickLogin();
-		
-		SoftAssert sa = new SoftAssert();
-		myAccPage map = new myAccPage(driver);
-		Assert.assertEquals(map.verify_myaccpage(), true);
+		HomePage hp = new HomePage(driver);
+		boolean rs3=hp.verify_bag();
+		Assert.assertEquals(rs3, true);
+	
 	}
 	
 

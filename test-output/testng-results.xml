@@ -1,38 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T09:47:51 IST" name="Suite" finished-at="2025-01-31T09:48:38 IST" duration-ms="46993">
+  <suite started-at="2025-07-23T20:22:41 IST" name="Suite" finished-at="2025-07-23T20:23:33 IST" duration-ms="52037">
     <groups>
       <group name="Master">
-        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" name="login" class="testCases.TC002_login_valid_creden"/>
+        <method signature="TC001_login_valid_creden.login()[pri:0, instance:testCases.TC001_login_valid_creden@15a34df2]" name="login" class="testCases.TC001_login_valid_creden"/>
+        <method signature="TC002_login_invalid.login()[pri:0, instance:testCases.TC002_login_invalid@1807e3f6]" name="login" class="testCases.TC002_login_invalid"/>
+        <method signature="TC003_verify_sorting.reg_validation()[pri:0, instance:testCases.TC003_verify_sorting@480d3575]" name="reg_validation" class="testCases.TC003_verify_sorting"/>
+        <method signature="TC004_verify_cart_functionality.checkout()[pri:0, instance:testCases.TC004_verify_cart_functionality@f1da57d]" name="checkout" class="testCases.TC004_verify_cart_functionality"/>
+        <method signature="TC005_verify_complete_order.checkout()[pri:0, instance:testCases.TC005_verify_complete_order@194fad1]" name="checkout" class="testCases.TC005_verify_complete_order"/>
+        <method signature="TC006_verify_empty_cart_checkout.checkout()[pri:0, instance:testCases.TC006_verify_empty_cart_checkout@26abb146]" name="checkout" class="testCases.TC006_verify_empty_cart_checkout"/>
       </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC003_verify_sorting.reg_validation()[pri:0, instance:testCases.TC003_verify_sorting@480d3575]" name="reg_validation" class="testCases.TC003_verify_sorting"/>
+      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC002_login_valid_creden.login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" name="login" class="testCases.TC002_login_valid_creden"/>
+        <method signature="TC001_login_valid_creden.login()[pri:0, instance:testCases.TC001_login_valid_creden@15a34df2]" name="login" class="testCases.TC001_login_valid_creden"/>
+        <method signature="TC002_login_invalid.login()[pri:0, instance:testCases.TC002_login_invalid@1807e3f6]" name="login" class="testCases.TC002_login_invalid"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-01-31T09:47:51 IST" name="ChromeTest" finished-at="2025-01-31T09:48:38 IST" duration-ms="46993">
-      <class name="testCases.TC002_login_valid_creden">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:47:52 IST" name="setup" finished-at="2025-01-31T09:48:34 IST" duration-ms="42705" status="PASS">
+    <test started-at="2025-07-23T20:22:41 IST" name="ChromeTest" finished-at="2025-07-23T20:23:33 IST" duration-ms="52037">
+      <class name="testCases.TC002_login_invalid">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002_login_invalid@1807e3f6]" started-at="2025-07-23T20:22:51 IST" name="setup" finished-at="2025-07-23T20:22:55 IST" duration-ms="3660" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:48:34 IST" name="login" finished-at="2025-01-31T09:48:37 IST" duration-ms="2276" status="PASS">
+        <test-method signature="login()[pri:0, instance:testCases.TC002_login_invalid@1807e3f6]" started-at="2025-07-23T20:22:55 IST" name="login" finished-at="2025-07-23T20:22:56 IST" duration-ms="948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC002_login_valid_creden@3cce5371]" started-at="2025-01-31T09:48:37 IST" name="tear_down" finished-at="2025-01-31T09:48:38 IST" duration-ms="1413" status="PASS">
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC002_login_invalid@1807e3f6]" started-at="2025-07-23T20:22:56 IST" name="tear_down" finished-at="2025-07-23T20:22:56 IST" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
-      </class> <!-- testCases.TC002_login_valid_creden -->
+      </class> <!-- testCases.TC002_login_invalid -->
+      <class name="testCases.TC006_verify_empty_cart_checkout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC006_verify_empty_cart_checkout@26abb146]" started-at="2025-07-23T20:23:26 IST" name="setup" finished-at="2025-07-23T20:23:29 IST" duration-ms="3686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkout()[pri:0, instance:testCases.TC006_verify_empty_cart_checkout@26abb146]" started-at="2025-07-23T20:23:29 IST" name="checkout" finished-at="2025-07-23T20:23:33 IST" duration-ms="3562" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1087)
+at testCases.TC006_verify_empty_cart_checkout.checkout(TC006_verify_empty_cart_checkout.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC006_verify_empty_cart_checkout@26abb146]" started-at="2025-07-23T20:23:33 IST" name="tear_down" finished-at="2025-07-23T20:23:33 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- testCases.TC006_verify_empty_cart_checkout -->
+      <class name="testCases.TC004_verify_cart_functionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC004_verify_cart_functionality@f1da57d]" started-at="2025-07-23T20:23:07 IST" name="setup" finished-at="2025-07-23T20:23:10 IST" duration-ms="3515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkout()[pri:0, instance:testCases.TC004_verify_cart_functionality@f1da57d]" started-at="2025-07-23T20:23:10 IST" name="checkout" finished-at="2025-07-23T20:23:16 IST" duration-ms="5226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC004_verify_cart_functionality@f1da57d]" started-at="2025-07-23T20:23:16 IST" name="tear_down" finished-at="2025-07-23T20:23:16 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- testCases.TC004_verify_cart_functionality -->
+      <class name="testCases.TC001_login_valid_creden">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001_login_valid_creden@15a34df2]" started-at="2025-07-23T20:22:42 IST" name="setup" finished-at="2025-07-23T20:22:49 IST" duration-ms="7191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:testCases.TC001_login_valid_creden@15a34df2]" started-at="2025-07-23T20:22:49 IST" name="login" finished-at="2025-07-23T20:22:50 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC001_login_valid_creden@15a34df2]" started-at="2025-07-23T20:22:51 IST" name="tear_down" finished-at="2025-07-23T20:22:51 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- testCases.TC001_login_valid_creden -->
+      <class name="testCases.TC005_verify_complete_order">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC005_verify_complete_order@194fad1]" started-at="2025-07-23T20:23:16 IST" name="setup" finished-at="2025-07-23T20:23:20 IST" duration-ms="3777" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkout()[pri:0, instance:testCases.TC005_verify_complete_order@194fad1]" started-at="2025-07-23T20:23:20 IST" name="checkout" finished-at="2025-07-23T20:23:25 IST" duration-ms="5293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC005_verify_complete_order@194fad1]" started-at="2025-07-23T20:23:25 IST" name="tear_down" finished-at="2025-07-23T20:23:26 IST" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- testCases.TC005_verify_complete_order -->
+      <class name="testCases.TC003_verify_sorting">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC003_verify_sorting@480d3575]" started-at="2025-07-23T20:22:56 IST" name="setup" finished-at="2025-07-23T20:23:00 IST" duration-ms="3498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="reg_validation()[pri:0, instance:testCases.TC003_verify_sorting@480d3575]" started-at="2025-07-23T20:23:00 IST" name="reg_validation" finished-at="2025-07-23T20:23:06 IST" duration-ms="6694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reg_validation -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:testCases.TC003_verify_sorting@480d3575]" started-at="2025-07-23T20:23:07 IST" name="tear_down" finished-at="2025-07-23T20:23:07 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- testCases.TC003_verify_sorting -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -12,13 +12,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC002_login_valid_creden">
+      <class name="testCases.TC006_verify_empty_cart_checkout">
         <methods>
           <include name="setup"/>
           <include name="tear_down"/>
-          <include name="login"/>
+          <include name="checkout"/>
         </methods>
-      </class> <!-- testCases.TC002_login_valid_creden -->
+      </class> <!-- testCases.TC006_verify_empty_cart_checkout -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

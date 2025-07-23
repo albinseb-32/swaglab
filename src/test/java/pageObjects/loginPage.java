@@ -15,12 +15,14 @@ public class loginPage {
 	}
 	
 	//Locater
-	@FindBy(xpath = "//input[@id='input-email']")
+	@FindBy(xpath = "//input[@id='user-name']")
 	WebElement email_txtbox;
-	@FindBy(xpath = "//input[@id='input-password']")
+	@FindBy(xpath = "//input[@id='password']")
 	WebElement pwd_txtbox;
-	@FindBy(xpath = "//input[@value='Login']")
+	@FindBy(xpath = "//input[@id='login-button']")
 	WebElement login_bnt;
+	@FindBy(xpath = "//h3[@data-test='error']")
+	WebElement error_popup;
 	
 	//actions
 	
@@ -34,6 +36,10 @@ public class loginPage {
 	public void clickLogin() {
 		login_bnt.click();
 	}
+	public boolean verifyError() {
+		return error_popup.isDisplayed();
+	}
+	
 	
 
 }

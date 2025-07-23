@@ -30,7 +30,7 @@ public class BaseClass{
 	
 		
 	@Parameters({"browser"})	
-	@BeforeClass(groups= {"Sanity", "Regression", "Master", "Datadriven"})
+	@BeforeClass(groups= {"Sanity", "Regression", "Master", "Datadriven", "Master1"})
 	
 	public void setup(String browser) throws IOException {
 		FileReader file = new FileReader("./src//test//resources//config.properties");
@@ -55,6 +55,8 @@ public class BaseClass{
 			
 			driver=new RemoteWebDriver(new URL("http://192.168.90.106:4444/wd/hub"),capabilities);
 		}
+		
+		//Local
 		if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
 			
 		
@@ -63,11 +65,12 @@ public class BaseClass{
 		case "edge" : driver = new EdgeDriver(); break;
 		case "firefox": driver = new FirefoxDriver(); break;
 		default : System.out.println("Issue in launching the browser");
+		
 		}
 			
 		}
 
-		driver.get("https://tutorialsninja.com/demo/");
+		driver.get(p.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
@@ -98,7 +101,6 @@ public class BaseClass{
 		sourceFile.renameTo(targetFile);
 			
 		return targetFilePath;
-
 	}
 }
 
