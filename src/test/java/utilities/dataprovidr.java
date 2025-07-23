@@ -8,9 +8,9 @@ public class dataprovidr {
 	
 	@DataProvider(name = "datapro")
 	String[][] logindata() throws IOException{
-		ExcelUtility xlut = new ExcelUtility("D://Opencart_LoginData.xlsx");
+		ExcelUtility xlut = new ExcelUtility("D://");
 		
-		//"D:\Opencart_LoginData.xlsx"
+		
 		
 		int rcount = xlut.getRowCount("Sheet1");
 		int colcount = xlut.getCellCount("Sheet1", 1);
